@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  box-shadow: 0 6px 18px rgba(20, 36, 60, 0.08);
+  max-width: 480px;
+}
+
+.avatar {
+  flex: 0 0 auto;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(20, 36, 60, 0.06);
+}
+
+.img {
+  object-fit: cover;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #0f172a;
+}
+
+.role {
+  margin: 0.125rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.bio {
+  margin: 0 0 0.75rem 0;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  background: #0ea5a4;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link {
+  color: #0ea5a4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .card {
+    max-width: 100%;
+    padding: 0.75rem;
+  }
+  .avatar {
+    width: 72px;
+    height: 72px;
+  }
+}
